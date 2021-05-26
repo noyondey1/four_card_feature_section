@@ -1,4 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --vdkblue: hsl(234, 12%, 34%);
+    --grayblue: hsl(229, 6%, 66%);
+    --vltgray: hsl(0, 0%, 98%);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 30px;
+    background-color:var(--vltgray);
+}
+
+header{
+    text-align: center;
+    padding: 70px 0px 50px 0px;
+}
+
+header h1{
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--vdkblue);
+}
+
+header h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--vdkblue);
+    margin: 8px 0px 15px 0px;
+}
+
+header p{
+    font-size: 1rem;
+    color: var(--vdkblue);
+    max-width: 500px;
+    margin: auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.card{
+    box-shadow: 2px 8px 15px 0px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    max-width: 400px;
+}
+
+.card.cyan{
+    border-top: 5px solid var(--cyan);
+}
+.card.red{
+    border-top: 5px solid var(--red);
+}
+.card.orange{
+    border-top: 5px solid var(--orange);
+}
+.card.blue{
+    border-top: 5px solid var(--blue);
+}
 
 
 
